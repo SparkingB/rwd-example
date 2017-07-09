@@ -1,0 +1,112 @@
+/* shop */
+.shop {
+    height: 10vh;
+}
+
+#shopee {
+    float: left;
+    background: url("../assets/ogo_shopee.png") no-repeat center center;
+    background-size: 100% auto;
+    height: 10vh;
+    margin-left: 10%;
+
+    max-width: 150px;
+    min-width: 90px;
+}
+
+#fb {
+    float: right;
+    height: 10vh;
+    margin-right: 10%;
+    text-align: right;
+
+}
+
+#fb-text {
+    display: inline-block;
+    width: 50%;
+
+    color: orangered;
+    font-size: 18px;
+    line-height: 10vh;
+    text-align: right;
+
+    font-weight: 700;
+}
+
+#fb-btn {
+    display: inline-block;
+    width: 50%;
+
+    background: url("../assets/btn_fb.png") no-repeat 50% 50%;
+    background-size: 50% auto;
+    height: 10vh;
+    vertical-align: middle;
+    margin-left: -15px;
+
+    max-width: 100px;
+    min-width: 50px;
+}
+
+.shop::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* warning */
+.warning {
+    color: white;
+    background-color: #787878;
+    text-align: center;
+    height: 6vh;
+    line-height: 6vh;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 10%;
+    border-radius: 5px;
+}
+
+/* ft-text */
+.ft-text {
+    margin: 10px 10%;
+}
+
+/* ft-logo */
+.ft {
+    padding-top: 20px;
+    border-top: 4px solid #004785;
+    margin: 10px 10%;
+}
+
+.ft-logo {
+    display: inline-block;
+    text-align: center;
+}
+
+#ft-logo-img {
+    background: url("../assets/logo_citi-ft.png") no-repeat top center;
+}
+
+#ft-logo-text {
+    font-size: 12px;
+    display: block;
+}
+
+/* ft-copyright */
+.ft-copyright {
+    font-size: 12px;
+    text-align: right;
+    float: right;
+}
+
+
+@media screen and ( max-width:700px) {
+    #fb-text {
+        font-size: 12px;
+    }
+
+    .footer {
+        margin-bottom: 15vh; /* ? */
+    }
+}
