@@ -1,0 +1,59 @@
+#part1-pic {
+    content: url("../assets/pic_kv.jpg");
+    display: block;
+}
+
+.part1 {
+    position: relative;
+}
+
+.part1-text-area {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+#part1-text-1, #part1-text-2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #004187;
+}
+
+#part1-text-2 {
+    display: none;
+}
+
+#part1-text-img {
+    display: block;
+    content: url("../assets/txt_gdfy.png");
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.part2 {
+    height: 10vh;
+    text-align: center;
+    margin: 5%;
+}
+
+.part2 p {
+    font-size: 19px;
+    color: #595757;
+    font-weight: normal;
+}
+
+@media screen and ( max-width:700px) {
+    #part1-pic {
+        content: url("../assets/m_pic_kv.jpg");
+    }
+
+    #part1-text-1 {
+        display: none;
+    }
+
+    #part1-text-2 {
+        display: initial;
+    }
+}
