@@ -1,0 +1,19 @@
+.header {
+    background-image: linear-gradient(to bottom, #1da4db 0%,#1990cf 25%,#0f6fb4 50%,#07559e 75%,#003e7f 100%);
+    position: relative;
+    height: 10vh;
+}
+
+#zh-logo {
+    background: url("../assets/logo_citi-1.png") no-repeat center center;
+    position: absolute;
+    left: 0;
+    height: 10vh;
+}
+
+#en-logo {
+    background: url("../assets/logo_citi-2.png") no-repeat center center;
+    position: absolute;
+    right: 0;
+    height: 10vh;
+}
