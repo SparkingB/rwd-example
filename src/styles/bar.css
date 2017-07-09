@@ -1,0 +1,39 @@
+.bar-container {
+    position: fixed;
+    right: 0;
+    top: 40%;
+    z-index: 1000;
+    text-align: right;
+}
+
+#side-bar {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: orangered;
+    width: 40px;
+    height: 140px;
+    padding: 20px 10px;
+    border-radius: 10px 0 0 10px;
+}
+
+#bottom-bar {
+    display: none;
+}
+ 
+@media screen and ( max-width:700px) {
+    .bar-container {
+        top: initial;
+        bottom: 0;
+    }
+
+    #side-bar {
+        display: none;
+    }
+
+    #bottom-bar {
+        width: 100%;
+        display: block;
+        content: url("../assets/btn_sidebtn.png");
+    }
+}
