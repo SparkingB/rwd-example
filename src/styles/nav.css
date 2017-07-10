@@ -2,6 +2,7 @@
     background-image: linear-gradient(0deg, #003e7f, #1da4db);
     text-align: center;
     height: 60px;
+    width: 100%;
 }
 
 .nav::after {
@@ -11,7 +12,7 @@
     vertical-align: middle;
 }
 
-.nav a {
+.nav > a {
     color: white;
     text-decoration: none;
     padding-right: 1%;
@@ -19,17 +20,53 @@
     font-size: 18px;
 }
 
-.nav a:last-child {
+.nav > a:last-child {
     padding-right: 0;
     border-right: none;
 }
 
+.nav > label, .nav input, input ~ * {
+    display: none;
+}
+
+.nav > label {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-btn {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn > div {
+    width: 60px;
+    height: 3px;
+    background: white;
+    margin-bottom: 3px;
+}
+
+
 @media screen and ( max-width:800px) {
+
     .nav {
-        height: 150px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
     }
-    .nav a {
+
+    .nav > label {
         display: block;
-        border-right: none;
+    }
+
+    .nav a {
+        display: none;
+    }
+
+    input:checked ~ * {
+        display: block;
     }
 }
